@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 0 10px;
+}
+
+article {
+    margin: 20px 0;
+}
+
+.wiki{
+    max-width: 350px;
+}
+
+.history{
+    max-width: 350px;
+    box-shadow: #333 10px 10px;
+}
+
+.science{
+    max-width: 350px;
+    box-shadow: #333 10px 10px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f1f1f1;
+}

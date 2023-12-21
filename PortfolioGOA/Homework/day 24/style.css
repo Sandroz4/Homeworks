@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+.container {
+  text-align: center;
+  background-color: rgb(202, 202, 202);
+  padding: 10px 10px 20px 10px;
+  border-radius: 20px 20px 20px 20px;
+  font-family: 'Jetbrains Mono', sans-serif;
+}
+
+.get {
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px;
+  transition: 0.3s ;
+  font-family: 'Jetbrains Mono', sans-serif;
+}
+
+.get:hover {
+  transform: scale(110%);
+}
+
+

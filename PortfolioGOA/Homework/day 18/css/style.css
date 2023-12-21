@@ -1,0 +1,96 @@
+.header {
+    text-align: center;
+    margin: 0;
+    font-size: 50px;
+}
+
+.headerp {
+    text-align: center;
+    margin: 0;
+    font-size: 25px;
+}
+
+.baptism {
+    text-align: center;
+    margin: 0;
+}
+
+.baptismimg {
+    display: block;
+    margin: 0 auto; 
+    width: 500px;
+}
+
+.baptismp {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+.jerome {
+    text-align: center;
+    margin: 0;
+}
+
+.jeromeimg {
+    display: block;
+    margin: 0 auto; 
+    width: 500px;
+}
+
+.jeromep {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+.supper {
+    text-align: center;
+    margin: 0;
+}
+
+.supperimg {
+    display: block;
+    margin: 0 auto; 
+    width: 1000px;
+}
+
+.supperp {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+.monalisa {
+    text-align: center;
+    margin: 0;
+}
+
+.monalisaimg {
+    display: block;
+    margin: 0 auto; 
+    width: 500px;
+}
+
+.monalisap {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
+
+.mundi {
+    text-align: center;
+    margin: 0;
+}
+
+.mundiimg {
+    display: block;
+    margin: 0 auto; 
+    width: 500px;
+}
+
+.mundip {
+    text-align: center;
+    margin: 0;
+    font-size: 20px;
+}
