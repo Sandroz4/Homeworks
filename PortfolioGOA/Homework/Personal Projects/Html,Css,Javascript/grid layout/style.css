@@ -1,0 +1,17 @@
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+    'header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+    gap: 10px;
+    background-color: #caaefd;
+    padding: 10px;
+}
+
+.grid-container > div {
+    background-color: #6765de;
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 30px;
+}
