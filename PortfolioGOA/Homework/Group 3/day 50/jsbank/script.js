@@ -22,5 +22,3 @@ widthdrawBtn.addEventListener('click', function(){
         amountOfMoney.textContent = `Amount: ${amount}$`;
     }
 });
-
-//goa best!
