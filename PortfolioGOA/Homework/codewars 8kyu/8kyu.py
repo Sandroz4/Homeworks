@@ -154,3 +154,67 @@ def greet(name, owner):
         return('Hello boss')
     else:
         return('Hello guest')
+
+#18 Transportation on vacation
+    
+def rental_car_cost(d):
+    if 7 > d  >= 3:
+        return((d * 40) - 20)
+    elif d >= 7:
+        return((d * 40) - 50)
+    else:
+        return(d * 40)
+    
+#19 Grasshopper - Grade book
+
+def get_grade(s1, s2, s3):
+
+    score = (s1 + s2 + s3) // 3
+
+    if 90 <= score <= 100:
+        return("A")
+    elif 80 <= score < 90:
+        return("B")
+    elif 70 <= score < 80:
+        return("C")
+    elif 60 <= score < 70:
+        return("D")
+    elif 0 <= score < 60:
+        return("F")
+
+#19 Grasshopper - Messi goals function
+    
+def goals(laLiga, copaDelRey, championsLeague):
+    return(laLiga + copaDelRey + championsLeague)
+
+
+#20 The Feast of Many Beasts
+
+def feast(beast, dish):
+    return beast[0] == dish[0] and beast[-1] == dish[-1]
+
+#21 Do I get a bonus?
+
+def bonus_time(salary, bonus):
+    if bonus:
+        return "$" + str(salary * 10)
+    else:
+        return "$" + str(salary)
+
+#22 Beginner Series #4 Cockroach
+    
+def cockroach_speed(s):
+    
+    cm = s * 27.77778
+    
+    return(int(cm))
+
+#23 Twice as old
+
+import math
+
+def twice_as_old(dad_years_old, son_years_old):
+    
+    age_gap = dad_years_old - son_years_old * 2
+    
+    return abs(age_gap )
