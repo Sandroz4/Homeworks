@@ -1,4 +1,4 @@
-#Abbreviate a Two Word Name
+#1 Abbreviate a Two Word Name
 
 def abbrev_name(name):
     words = name.split(' ')
@@ -7,13 +7,13 @@ def abbrev_name(name):
     return '.'.join(letters)
 
 
-#Is n divisible by x and y?
+#2 Is n divisible by x and y?
 
 def is_divisible(n,x,y):
     return n % x == 0 and n % y == 0
 
 
-#If you can't sleep, just count sheep!!
+#3 If you can't sleep, just count sheep!!
 
 def count_sheep(n):
     counting_sheep = ""
@@ -23,12 +23,12 @@ def count_sheep(n):
         
     return counting_sheep
 
-#Third Angle of a Triangle
+#4 Third Angle of a Triangle
 
 def other_angle(a, b):
     return 180 - a - b
 
-#Area or Perimeter
+#5 Area or Perimeter
 
 def area_or_perimeter(l , w):
     if l == w:
@@ -36,7 +36,7 @@ def area_or_perimeter(l , w):
     elif l != w:
         return (l + w) * 2
 
-#L1: Set Alarm
+#6 Set Alarm
     
 def set_alarm(employed, vacation):
     if employed and not vacation:
@@ -44,12 +44,12 @@ def set_alarm(employed, vacation):
     else:
         return False
     
-#Will you make it?
+#7 Will you make it?
 
 def zero_fuel(distance_to_pump, mpg, fuel_left):
     return (fuel_left * mpg) >= distance_to_pump
 
-#Thinkful - Logic Drills: Traffic light
+#8 Thinkful - Logic Drills: Traffic light
 
 def update_light(current):
     
@@ -62,7 +62,7 @@ def update_light(current):
     else: 
         pass
 
-#Rock Paper Scissors!
+#9 Rock Paper Scissors!
 
 def rps(p1, p2):
     if (p1, p2) in [("scissors", "paper"), ("rock", "scissors"), ("paper", "rock")]:
@@ -72,7 +72,7 @@ def rps(p1, p2):
     else:
         return "Draw!"
 
-#Switch it Up!
+#10 Switch it Up!
     
 def switch_it_up(number):
 
@@ -99,12 +99,12 @@ def switch_it_up(number):
     else:
         return False
 
-#Sentence Smash
+#11 Sentence Smash
     
 def smash(words):
     return " ".join(words)
     
-#Fake Binary
+#12 Fake Binary
 
 def fake_bin(x):
     result = ""
@@ -117,8 +117,40 @@ def fake_bin(x):
     
     return result
 
-#You only need one - Beginner
+#13 You only need one - Beginner
 
 def check(seq, elem):
     return elem in seq 
 
+#14 Quarter of the year
+
+def quarter_of(month):
+    if 1 <= month <= 3:
+        return 1
+    elif 4 <= month <= 6:
+        return 2
+    elif 7 <= month <= 9:
+        return 3
+    elif 10 <= month <= 12:
+        return 4
+    
+#15 Jenny's secret message
+    
+def greet(name):
+    if name == "Johnny":
+        return("Hello, my love!")
+    else:
+        return "Hello, {name}!".format(name=name)
+
+#16 Volume of a Cuboid
+    
+def get_volume_of_cuboid(length, width, height):
+    return(length * width * height)
+
+#17 Grasshopper - Personalized Message
+
+def greet(name, owner):
+    if name == owner:
+        return('Hello boss')
+    else:
+        return('Hello guest')
