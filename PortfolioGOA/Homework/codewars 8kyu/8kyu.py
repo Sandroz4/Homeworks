@@ -71,3 +71,54 @@ def rps(p1, p2):
         return "Player 2 won!"
     else:
         return "Draw!"
+
+#Switch it Up!
+    
+def switch_it_up(number):
+
+    if number == 0:
+        return "Zero"
+    elif number == 1:
+        return "One"
+    elif number == 2:
+        return "Two"
+    elif number == 3:
+        return "Three"
+    elif number == 4:
+        return "Four"
+    elif number == 5:
+        return "Five"
+    elif number == 6:
+        return "Six"
+    elif number == 7:
+        return "Seven"
+    elif number == 8:
+        return "Eight"
+    elif number == 9:
+        return "Nine"
+    else:
+        return False
+
+#Sentence Smash
+    
+def smash(words):
+    return " ".join(words)
+    
+#Fake Binary
+
+def fake_bin(x):
+    result = ""
+    
+    for i in x:
+        if int(i) < 5:
+            result += "0"
+        elif int(i) >= 5:
+            result += "1"
+    
+    return result
+
+#You only need one - Beginner
+
+def check(seq, elem):
+    return elem in seq 
+
