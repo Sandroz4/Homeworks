@@ -245,3 +245,12 @@ def hoop_count(n):
     else:
         return("Keep at it until you get it")
 
+#28 Grasshopper - Messi Goals
+    
+la_liga_goals = 43
+champions_league_goals = 10
+copa_del_rey_goals = 5
+
+total_goals = la_liga_goals + champions_league_goals + copa_del_rey_goals
+
+print(total_goals)
