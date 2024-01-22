@@ -218,3 +218,30 @@ def twice_as_old(dad_years_old, son_years_old):
     age_gap = dad_years_old - son_years_old * 2
     
     return abs(age_gap )
+
+#24 Is it even?
+
+def is_even(n): 
+    return n %2 == 0
+
+#25 Function 2 - squaring an argument
+
+def square(n):
+    return n ** 2
+
+#26 Will there be enough space?
+
+def enough(cap, on, wait):
+    if (cap - on) >= wait:
+        return 0
+    else:
+        return(wait - (cap - on))
+    
+#27 Keep up the hoop
+    
+def hoop_count(n):
+    if n >= 10:
+        return("Great, now move on to tricks")
+    else:
+        return("Keep at it until you get it")
+        
