@@ -254,3 +254,32 @@ copa_del_rey_goals = 5
 total_goals = la_liga_goals + champions_league_goals + copa_del_rey_goals
 
 print(total_goals)
+
+
+#29 Reversed sequence
+
+def reverse_seq(n):
+    result = []
+    
+    for i in range(n, 0, -1):
+        result.append(i)
+    return result
+
+print(reverse_seq(5))
+
+#30 Count by X
+
+def count_by(number, number_of_times):
+
+    result = []
+
+    for i in range(1, number_of_times + 1):
+        result.append(i * number)
+    return result
+
+#31 return without a !
+
+def remove_exclamation_marks(s):
+    x = s.replace("!", "")
+    return x
+
