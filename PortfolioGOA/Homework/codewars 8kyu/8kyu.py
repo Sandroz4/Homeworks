@@ -283,3 +283,27 @@ def remove_exclamation_marks(s):
     x = s.replace("!", "")
     return x
 
+#32 Grasshopper - Check for factor
+
+def check_for_factor(base, factor):
+    return base % factor == 0
+
+#33 Count the Monkeys!
+
+def monkey_count(n):
+    
+    monkey = []
+    
+    for i in range(1, n + 1):
+        monkey.append(i)
+        
+    return monkey
+    
+
+#34 Grasshopper - Terminal game move function
+
+def move(position, roll):
+    new_position = position + (roll * 2)
+    return new_position
+
+#35 
