@@ -306,4 +306,60 @@ def move(position, roll):
     new_position = position + (roll * 2)
     return new_position
 
-#35 
+#35 Unfinished Loop - Bug Fixing #1
+
+def create_array(n):
+    res=[]
+    i=1
+    while i<=n: 
+        res+=[i]
+        i += 1
+    return res
+
+#36 Grasshopper - If/else syntax debug
+
+def check_alive(health):
+    if health > 0:
+        return True
+    else:
+        return False
+    
+#37 Filtering even numbers (Bug Fixes)
+    
+def kata_13_december(lst): 
+    result = [num for num in lst if num % 2 != 0]
+    return result
+
+#38 What's the real floor?
+
+def get_real_floor(n):
+    
+    if n == 1:
+        return 0
+    elif 1 < n < 13:
+        return n - 1
+    elif n == 13:
+        return False
+    elif n > 13:
+        return n - 2
+    elif n == 0:
+        return 0 
+    elif n < 0:
+        return n 
+
+#39 Basic variable assignment
+    
+a = "code"
+b = "wa.rs"
+name = a + b
+
+#40 Find numbers which are divisible by given number
+
+def divisible_by(numbers, divisor):
+    my_arr = []
+    
+    for i in numbers:
+        if i % divisor == 0:
+            my_arr.append(i)
+    
+    return my_arr
