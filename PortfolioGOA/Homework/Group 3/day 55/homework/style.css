@@ -1,0 +1,24 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .flex-container {
+    display: flex;
+    border: 2px solid #333;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .item {
+    flex: 1;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    background-color: #66afe9;
+    color: white;
+  }
+  
