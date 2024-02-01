@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="landingPage.css" />
+  <script src="https://kit.fontawesome.com/ea0066fe44.js" crossorigin="anonymous"></script>
+  <title>GOA</title>
+</head>
+
+<body>
+
+  <!-- Home Section -->
+  <div id="home">
+    <div class="container">
+      <nav>
+        <img src="images/goa_logo.jpg" class="logo" alt="logo" />
+        <ul id="sidemenu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#squads">Squads</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="right-side-bar">
+          <p id="login" onclick="openLoginModal()">Join</p>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </div>
+      </nav>
+      <div class="header-text">
+        <h1>
+          goal <span>oriented</span> <br />
+          academy
+        </h1>
+        <p>
+          an academy you definitely won't regret enrolling in, <br />
+          the best so you become the best.
+        </p>
+      </div>
+      <div class="btn-logos">
+        <button class="btn1">Join</button>
+        <button class="btn2">learn ></button>
+      </div>
+    </div>
+  </div>
+
+  <!-- About Section -->
+  <div id="about">
+    <div class="about">
+      <div class="circle3"></div>
+      <div class="about-us-img-and-text">
+        <div class="about-goa">
+          <img id="about-goa-logo" src="images/goa_logo.jpg" alt="goa logo">
+        </div>
+        <div class="about-heading-p-btn">
+          <h1>GOA</h1>
+          <p>Goal-Oriented Academy (GOA): Creating the optimal environment for children in Georgia, GOA is committed to providing classes that bring joy to every child. The anticipation of the next lesson unifies their spirits.<br><br>
+            Together, we are shaping a bright future. Our principal mentor, Nika Keshelava, consistently prioritizes the spiritual and physical development of each child. He guides them on the right path and offers continuous assistance in problem-solving.<br><br>
+            Parents of GOA children experience a sense of happiness and tranquility, knowing that their child is in reliable and caring hands.</p>
+          <button>join ></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Squads Section -->
+  <div id="squads">
+    <div class="circle1"></div>
+    <div class="glass-card">
+      <h1>Squad System</h1>
+      <p>
+        Squad System at Goal-Oriented Academy (GOA): Our innovative approach extends beyond the classroom with a unique squad system. In this system, each successful student is appointed as a leader and mentor within their own squad of fellow children. This not only fosters a sense of camaraderie but also provides valuable experience and motivation for all members.<br><br>
+        By creating these student-led squads, we aim to empower our learners to take on leadership roles, sharing their knowledge and inspiring others. This collaborative structure enhances the overall learning environment, promoting mutual support and a shared journey toward success.<br><br></p>
+        <div class="glass-card-img">
+        <img id="glass-img" src="images/squad.jpg" alt="goa squad system">
+      </div>
+    </div>
+    <div class="circle2"></div>
+  </div>
+
+  <script src="landingPage.js"></script>
+
+  <!-- Services Section -->
+  <div id="services">
+    <div class="container">
+      <h1 class="sub-title">Programming <span>Languages</span></h1>
+      <div class="services-list">
+        <!-- Service 1 -->
+        <div class="services-list-box">
+          <i class="fa-brands fa-python"></i>
+          <h2>Python</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="services-list-box">
+          <i class="fa-brands fa-square-js"></i>
+          <h2>Javascript</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="services-list-box">
+          <i class="fa-brands fa-java"></i>
+          <h2>Java</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus</p>
+          <a href="#">Learn more</a>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="services-list-box">
+          <i class="fa-brands fa-swift"></i>
+          <h2>Swift</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus</p>
+          <a href="#">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- contact -->
+  <div id="contact">
+    <div class="circle4"></div>
+    <div class="container2">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACT</span>
+              <span>US</span>
+            </div>
+            <div class="app-contact">CONTACT INFO : +62 81 314 928 595</div>
+          </div>
+          <div class="screen-body-item">
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="NAME">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="EMAIL">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="CONTACT NO">
+              </div>
+              <div class="app-form-group message">
+                <input class="app-form-control" placeholder="MESSAGE">
+              </div>
+              <div class="app-form-group buttons">
+                <button class="app-form-button">CANCEL</button>
+                <button class="app-form-button">SEND</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="circle5"></div>
+  </div>
+
+  <!-- footer Section -->
+  <footer class="footer">
+    <ul class="social-icon">
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-twitter"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a></li>
+      <li class="social-icon__item"><a class="social-icon__link" href="#">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a></li>
+    </ul>
+    <p>&copy;2024 Goal Oriented Academy | All Rights Reserved</p>
+  </footer>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="landingPage.js"></script>
+</body>
+</html>
