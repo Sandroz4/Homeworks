@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100..900&display=swap');
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: BPG Arial;
+    /* font-family: BPG Arial; */
+    font-family: "BPG Arial";
 }
 html{
     scroll-behavior: smooth;
@@ -55,6 +57,7 @@ nav ul li a{
 .img-carrousel img,img{
     border-radius: 10px;
     transition: transform 0.3s;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 .img-carrousel div {
@@ -62,18 +65,68 @@ nav ul li a{
     
 }
 
-.img-carrousel img {
-    width: 210px; /* Adjust this value as needed */
-    height: 160px; /* Adjust this value as needed */
-    object-fit: cover; /* This ensures the image fills the container without stretching */
+.img-carrousel img, #about img{
+    width: 210px;
+    height: 160px; 
+    object-fit: cover; 
 }
 .img-carrousel div,img:hover {
-    transform: scale(1.02); /* Scale up by 10% on hover */
+    transform: scale(1.02); 
 }
+
 /*-------------css-for-smallscreen----------------*/
 nav .fa-solid{
     display: none;
 }
+
+/* All sections */
+section{
+    margin-top: 100px;
+}
+/* About section */
+#about{
+    background-color: #1b4769;
+    color: #e6e6e6;
+    width: 65%;
+    margin-left: 17.5%;
+    margin-top: 14%;
+    border-radius: 10px;
+}
+#about p{
+    font-size: 15px;
+}
+#about h2{
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+.about-div1, .about-div2, .about-div3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin-left: 10%;
+    padding: 50px 0 0 0;
+}
+#about-intro-p{
+    padding-right: 40px;
+}
+#about-p3{
+    padding-left: 40px;
+}
+#about-h2-3, #about-p3{
+    text-align: right;
+}
+.about-div2{
+    text-align: center;
+}
+.about-div3{
+    padding-bottom: 50px;
+}
+
+
+
+
+
 @media only screen and (max-width: 1280px){
     nav{
         justify-content: space-between;
@@ -104,5 +157,63 @@ nav .fa-solid{
         left: 25px;
         cursor: pointer;
     }
+    #about p{
+        font-size: 12px;
+    }
+    #about h2{
+        font-size: 20px;
+    }
+}
 
+
+@media only screen and (max-width: 950px){
+    h1{
+        font-size: 25px;
+    }
+    #about p{
+        font-size: 8px;
+    }
+    #about h2{
+        font-size: 16px;
+    }
+    #about img{
+        width: 150px;
+        height: 90px; 
+    }
+    #about-intro-p{
+        padding-right: 30px;
+    }
+    #about-p3{
+        padding-left: 30px;
+    }
+}
+
+
+@media only screen and (max-width: 600px){
+    h1{
+        font-size: 20px;
+    }
+    #about p{
+        font-size: 4px;
+    }
+    #about h2{
+        font-size: 8px;
+    }
+    #about img{
+        width: 130px;
+        height: 70px; 
+    }
+    #about-intro-p{
+        padding-right: 10px;
+    }
+    #about-p3{
+        padding-left: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #about img{
+        width: 100px;
+        height: 50px; 
+    }
 }
