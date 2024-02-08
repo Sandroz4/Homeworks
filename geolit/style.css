@@ -88,6 +88,7 @@ section{
     background-color: #1b4769;
     color: #e6e6e6;
     width: 65%;
+    height: 70%;
     margin-left: 17.5%;
     margin-top: 14%;
     border-radius: 10px;
@@ -124,8 +125,57 @@ section{
 }
 
 
-
-
+section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper{
+    width: calc(90% - 20%);
+    height: calc(80vh - 4rem);
+    border-radius: 8px;
+}
+.swiper-slide > img{
+    width: 100%;
+    height: 93%;
+    object-fit: cover;
+    object-position: center;
+}
+.swiper-slide{
+    border-radius: 8px;
+    overflow: hidden;
+}
+.pagination_{
+    position: absolute;
+    width: calc(85% - 0%);
+}
+.pagination_ div[class^="swiper-button"]::after{
+    display: none;
+}
+.pagination_ div[class^="swiper-button"]{
+    width: 45px;
+    height: 45px;
+    background: #1b4769;
+    border: 1px solid #1b4769;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.pagination_ div[class^="swiper-button"] p{
+    color: white;
+    margin-left: 40%;
+}
+.pagination_ div[class^="swiper-button"] img{
+    width: 60%;
+}
+.swiper-pagination-bullet-active{
+    width: 20px;
+    border-radius: 4px;
+    background: rgba(200,200,200,0.8);
+}
 
 @media only screen and (max-width: 1280px){
     nav{

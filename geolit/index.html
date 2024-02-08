@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
     <title>Portfolio SZ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <script
       src="https://kit.fontawesome.com/ea0066fe44.js"
       crossorigin="anonymous"
@@ -93,6 +94,32 @@
         </div>
       </div>
     </section>
+    <section id="projects-main">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide"><img src="images_otar/1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images_otar/2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images_otar/3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images_otar/4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images_otar/5.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images_otar/6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images_otar/7.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images_otar/8.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images_otar/9.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images_otar/10.jpg" alt=""></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+        <div class="pagination_">
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"><p><</p><img src="images/icons/back.svg" alt=""></div>
+            <div class="swiper-button-next"><p>></p><img src="images/icons/next.svg" alt=""></div>
+        </div>
+        </div>
+    </section>
 
     <section id="otaraant-qvrivi"></section>
 
@@ -136,6 +163,23 @@
       function closemenu() {
         sidemenu.style.right = "-200px";
       }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper',{
+            speed: 300,
+            spaceBetween: 10,
+            slidesPerView: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            }
+        });
     </script>
   </body>
 </html>
