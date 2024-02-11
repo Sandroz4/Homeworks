@@ -1,4 +1,3 @@
-// script.js
 function userInfo(Name, Email, Password) {
     this.name = Name;
     this.email = Email;
