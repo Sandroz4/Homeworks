@@ -1,5 +1,5 @@
-# # v6 (A new mode which only filters every second letter(For example, "water" will be turned into "wtr",
-# # user can now customize it(For example, when the user inputs "3", then every third letter gets filtered))
+# v6 (A new mode which only filters every second letter(For example, "water" will be turned into "wtr",
+# user can now customize it(For example, when the user inputs "3", then every third letter gets filtered))
 # counter = 1
 # print("""if you dont understand the mode B,heres the example:
 #       input: 3
