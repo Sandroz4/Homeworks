@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Light-pink: hsl(275, 100%, 97%);
+  --Grayish-purple: hsl(292, 16%, 49%);
+  --Dark-purple: hsl(292, 42%, 14%);
+}
+
+body {
+  font-family: "Work Sans", sans-serif;
+  min-height: 100vh;
+  background-color: var(--Light-pink);
+  background-image: url("assets/images/background-pattern-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 28.5%;
+}
+.container {
+  background-color: var(--White);
+  margin: 24px;
+  margin-top: 142px;
+  padding: 24px;
+  padding-bottom: 0px;
+  border-radius: 8px;
+  box-shadow: 0px 11px 30px 0px #e8c9eb;
+}
+
+abbr[title]{
+  text-decoration: none;
+}
+
+.header-div {
+  display: flex;
+  gap: 8px;
+}
+.header-div img {
+  transform: scale(60%);
+  position: relative;
+  left: -8px;
+  top: -1px;
+}
+h1 {
+  font-weight: 800;
+  color: var(--Dark-purple);
+}
+
+details > summary {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin: 22px 0;
+  font-weight: 600;
+  color: var(--Dark-purple);
+}
+
+hr {
+  border: 1px solid #f3f3f3;
+}
+
+details > p {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 16px;
+  color: hsl(292, 16%, 49%);
+}
+
+
+@media (min-width: 1024px) {
+  body {
+    background-image: url("assets/images/background-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 30%;
+    overflow-x: hidden;
+  }
+  .container {
+    margin: 168px auto 0px;
+    max-width: 600px;
+    padding: 40px 38px 16px;
+    border-radius: 16px;
+  }
+  .header-div {
+    padding-left: 10px;
+    gap: 14px;
+    margin-bottom: 32px;
+  }
+  .header-div img {
+    transform: scale(100%);
+  }
+  h1 {
+    font-size: 56px;
+  }
+  details > summary {
+    font-size: 18px;
+    gap: 16px;
+    margin: 24px 0;
+  }
+  details > p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 16px;
+  }
+}
+
+
+
+details > summary:hover {
+  cursor: pointer;
+  color: #ad28eb;
+}
