@@ -363,3 +363,16 @@ def divisible_by(numbers, divisor):
             my_arr.append(i)
     
     return my_arr
+
+
+#41 Removing Elements
+
+def remove_every_other(my_list):
+    arr = []
+    
+    for index in range(len(my_list)):
+        if index % 2 == 0:
+            arr.append(my_list[index])
+    return arr
+
+#42 
