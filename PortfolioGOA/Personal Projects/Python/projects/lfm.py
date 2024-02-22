@@ -16,12 +16,14 @@ while True:
 C to filter consonants,
 X to filter letters in the word,
 Z to not filter letters in the word,
-B to filter xth letter from the word: """).lower()
+B to filter xth letter from the word
+D to filter digits from the word: """).lower()
+
     
     if user_choice == "v" or user_choice == "c" or user_choice == 'x' or user_choice == "z" or user_choice == "b":
         break
     else:
-        print("invalid input, please enter V or C or X or Z or B!")
+        print("Please enter the valid options above!")
 
 if user_choice == "x":
     letter_input = input("Enter letters you want to filter: ")
