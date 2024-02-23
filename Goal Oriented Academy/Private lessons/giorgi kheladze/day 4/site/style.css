@@ -1,0 +1,45 @@
+#fasber{
+    font-family: 'Courier New', Courier, monospace;
+    color: brown;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgb(123, 123, 123);
+}
+
+#chika{
+    color: rgb(230, 230, 47);
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: capitalize;
+    text-shadow: 2px 2px 4px rgb(123, 123, 123);
+}
+body{
+    background-color: rgb(235, 215, 188);
+}
+
+#fasber{
+    width: 110px;
+}
+
+#chica{
+    width: 110px;
+}
+
+#animatronic{
+    font-family: 'Courier New', Courier, monospace;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 4px rgb(123, 123, 123);
+    color: rgb(30, 142, 86);
+    text-align: center;
+    font-weight: 600;
+}
+
+.btn{
+    background-color: rgb(200, 129, 37);
+    border: none;
+    border-radius: 2.5px;
+    color: rgb(88, 23, 23);
+    font-family: 'Courier New', Courier, monospace;
+}
+.both{
+    display: flex;
+    justify-content: space-evenly;
+}
