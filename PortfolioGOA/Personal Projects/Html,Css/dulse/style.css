@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background: #141414;
+}
+.navbar{
+    background: #ebebeb;
+    width: 4%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 215px;
+    cursor: pointer;
+}
+.navbar ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px 5px 10px;
+    display: flex;
+    flex-direction: column;
+    transition: .3s ease-in;
+}
+.navbar a:hover{
+    box-shadow: rgba(17, 17, 26, 0.1)
+    0px 4px 16px, rgba(17, 17, 26, 0.1) 
+    0px 8px 24px, rgba(17, 17, 26, 0.1)
+    0px 16px 56px;;
+    transform: scale(1.03);
+}
+.li{
+    background: #424242;
+    justify-content: space-between;
+    margin: 5px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.container {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    text-align: center; 
+    margin-top: 30px;
+}
+  
+img {
+    max-width: 25%;
+    margin-right: 10px;
+    margin-top: 50px;
+    border-radius: 10px; 
+    transition: .5s ease;
+    cursor: pointer;
+}
+img:hover{
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    transform: scale(1.01);
+}
+.fh1{
+    margin-left: 15px;
+    color: white;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.fh1:hover{
+    color: #fff;
+    text-shadow: 0 0 2.5px #ebebeb,
+                0 0 5px #ebebeb,
+                0 0 20px #ebebeb,
+                0 0 40px #ebebeb;
+}
+.fh2{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    transition: .5s ease;
+    cursor: pointer;
+}
+.fh2:hover{
+    color: #fff;
+    text-shadow: 0 0 2.5px #ebebeb,
+                0 0 5px #ebebeb,
+                0 0 20px #ebebeb,
+                0 0 40px #ebebeb;
+}
+.containerimg {
+    width: 75%;
+    display: flex;
+    margin: auto;
+  }
+  
+.gallery-img {
+    transition: .5s ease;
+}
+  
+.gallery-img:hover {
+    transform: scale(1.03);
+    filter: blur(0); 
+}
+  
+.containerimg:hover .gallery-img:not(:hover) {
+    filter: blur(5px); 
+}
+  
+.info, h1, p {
+    text-align: center;
+}
+  
+.info, h1 {
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    transition: .5s ease;
+}
+  
+.info, h1:hover {
+    color: #fff;
+    text-shadow: 0 0 2.5px #ebebeb,
+                  0 0 5px #ebebeb,
+                  0 0 20px #ebebeb,
+                  0 0 40px #ebebeb;
+}
+  
+.info, p {
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+}
+footer p {
+    margin: 0;
+    font-size: 14px;
+    cursor: pointer;
+}
+.contact_form {
+    background-color: #424242;
+    padding: 20px;
+    border-radius: 8px;
+    width: 400px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+label {
+    margin-bottom: 8px;
+    color: white;
+}
+
+input,
+textarea {
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #141414;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: .5s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0d0d0d;
+}
+footer {
+    background-color: #333; 
+    color: white; 
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    cursor: pointer;
+}

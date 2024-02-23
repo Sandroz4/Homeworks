@@ -205,3 +205,56 @@
 // }
 
   
+//while loops
+// let counter = 0;
+
+// while (counter < 3) {
+//     alert("hello");
+//     counter += 1;
+// }
+
+// let counter = 0;
+// while (counter < 4) {
+//   alert(counter);
+//   counter = counter + 1;
+// // }
+
+// let counter = 5;
+
+// while (counter < 10) {
+//   console.log("Message" + counter);
+//   counter = counter + 1;
+// }
+
+// let counter = 5;
+
+// while (counter <= 10) {
+//   console.log("Message" + counter);
+//   counter = counter + 1;
+// }
+
+// let seats = 10;
+
+// while (seats > 0) {
+//   console.log("Seats left: " + seats);
+//   seats = seats - 1;
+// }
+
+// let seats = 300;
+
+// while (seats > 0) {
+//   alert("Sell ticket");
+//   seats = seats - 1;
+// }
+
+
+//for loops
+// let i = 0;
+// while (i < 5) {
+//   alert("Message");
+//   i = i + 1;
+// }
+
+for (let i = 0; i < 3; i++) {
+    alert("Hello");
+  }
