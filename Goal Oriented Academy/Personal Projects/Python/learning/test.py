@@ -1,18 +1,29 @@
-def walk(steps):
-    for step in range(1, steps + 1):
-        print(f'you take steb #{steps}')
+# def multiply():
+#     x = float(input("Enter the first number (x): "))
+#     y = float(input("Enter the second number (y): "))
+#     multiplied = x * y
+#     print(f"Result: {multiplied}")
 
-walk(100)
+# multiply()
 
+balance = 0
 
+while True:
+    user_input = input("Would you like to (A)dd or (R)emove money? (Q to quit) ").lower()
 
-def walk(steps):
-        if steps == 0:
-             return
-        walk(steps - 1)
-        print(f'you take steb #{steps}')
-        
-
-walk(100)
-
-
+    if user_input == 'a':
+        input_add = int(input('Enter the amount of money to add: '))
+        balance += input_add
+        print("Updated balance:", balance)
+    elif user_input == 'r':
+        input_remove = int(input('Enter the amount of money to remove: '))
+        if input_remove <= balance:
+            balance -= input_remove
+            print("Updated balance:", balance)
+        else:
+            print("Error: Insufficient funds.")
+    elif user_input == 'q':
+        print("Exiting program.")
+        break
+    else:
+        print("Invalid input. Please choose 'A' to add, 'R' to remove money, or 'Q' to quit.")
