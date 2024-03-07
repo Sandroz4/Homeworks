@@ -255,6 +255,169 @@
 //   i = i + 1;
 // }
 
-for (let i = 0; i < 3; i++) {
-    alert("Hello");
-  }
+// for (let i = 0; i < 3; i++) {
+//     alert("Hello");
+//   }
+
+
+// let age = prompt('enter an age: 11')
+
+// if(age >= 18){
+//   console.log('hello')
+// }
+// else if(age == 5){
+//   console.log('ah ok!')
+// }
+
+// let time  = 10;
+
+// if(time < 12){
+//   console.log('good morning')
+// }
+// else{
+//   console.log('good afternoon')
+// }
+
+// let isStudent = true;
+
+// if(isStudent){
+//   console.log('hello')
+// }
+// else{
+//   console.log('duh')
+// }
+
+// let age = 16;
+// let hasLicense = fals;
+
+// if(age >= 16){
+//   console.log('u are old enough to drive')
+
+//   if(hasLicense){
+//     console.log('u have a license')
+//   }
+//   else{
+//     console.log('u do not have your license, yet')
+//   }
+// }
+// else{
+//   console.log('u must be 16+ to have a license')
+// }
+
+// const myText = document.getElementById('myText');
+// const mySubmit = document.getElementById('mySubmit');
+// const resultElement = document.getElementById('resultElement')
+// let age = 16
+
+// mySubmit.onclick = function(){
+//   age = myText.value;
+//   age = Number(age);
+
+
+//   if(age >= 10000){
+//     resultElement.textContent = `u are too old to enter this site, go sleep dracula`
+//   }
+//   else if(age == 0){
+//     resultElement.textContent = `bro what, ur not even bor yet dude!`
+//   }
+//   else if(age < 0){
+//     resultElement.textContent = `ur age can not be below 0`
+//   }
+//   if(age  >= 18){
+//     resultElement.textContent = `u are old enough to enter this site`
+//   }
+//   else{
+//     resultElement.textContent = `u must be 18+ to enter this site`
+//   }
+// }
+
+
+
+// let age = 16;
+// let message = age >= 18 ? 'you are an adult' : 'you are a minor'
+// console.log(message)
+
+// let age = prompt('enter your age: ')
+
+// let message = age >= 18 ? 'you are old' : 'you are young'
+// console.log(message)
+
+
+// let time = 9;
+// let greeting = time < 12 ? 'its not midday bro' : 'now we are talking :Dd'
+// console.log(greeting)
+
+
+// let isStudent = true;
+
+// let message = isStudent ? 'you are a student' : 'you are not a student'
+// console.log(message)
+
+// let purhaseAmount = 125;
+// let discount = purhaseAmount >= 100 ? 'wow thats a lot' : 'no discount at all, sry'
+// console.log(`your total is ${purchaseAmount - purchaseAmount * (discount /100)}`)
+
+// let day = 1;
+
+// switch(day){
+//   case 1:
+//     console.log('it is monday')
+//     break;
+//   case 2:
+//     console.log('its tuesday')
+//     break;
+//   case 3:
+//     console.log('its wednesday')
+//     break;
+//   case 4:
+//     console.log('its thursday')
+//     break;
+//   case 5:
+//     console.log('its friday')
+//     break;
+//   case 6:
+//     console.log('its saturday')
+//     break;
+//   case 7:
+//     console.log('its sunday')
+//     break;
+//   default:
+//     console.log(`${day} is not a day`)
+// }
+
+// let testScore = 92;
+// let letterGrade;
+
+// switch(true){
+//   case testScore >= 90:
+//     letterGrade = 'A'
+//     break;
+//   case testScore >= 80:
+//     letterGrade = 'B'
+//     break;
+//   case testScore >= 70:
+//     letterGrade = 'C'
+//     break;
+//   default:
+//     letterGrade = 'F'
+//     break;
+  
+// }
+
+// console.log(letterGrade)
+
+
+// let username = '        SandroZabakhidze   ';
+
+// // let u = username.length
+// // console.log(u)
+
+// // username = username.trim()
+// // console.log(username)
+
+// username = username.toUpperCase()
+// username = username.trim()
+// console.log(username)
+
+// // let a = username.indexOf(1)
+// // console.log(a)
