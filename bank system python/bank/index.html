@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bank System</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,900&display=swap"
+    />
+  </head>
+  <body>
+    <div class="all-together">
+      <div class="container">
+        <div class="login-container">
+          <div class="all-two">
+            <div class="headingbank">
+              <h2 style="color: 1d3849">SDL Bank</h2>
+            </div>
+
+            <div class="logo">
+              <img
+                src="logo.jpg"
+                style="
+                  width: 50px;
+                  border-radius: 15px;
+                  margin-top: 23px;
+                  margin-left: 10px;
+                "
+                alt=""
+              />
+            </div>
+          </div>
+
+          <form id="login-form">
+            <input type="text" id="username" placeholder="Username" required />
+            <input
+              type="password"
+              id="password"
+              placeholder="Password"
+              required
+            />
+            <div class="cont-for-btn">
+              <button id="sign-in" type="submit">Sign In</button>
+              <button id="sign-up" type="button">Sign Up</button>
+            </div>
+          </form>
+        </div>
+        <div class="bank" style="width: 500px">
+          <h2 style="text-align: center">
+            Welcome, <span id="user-greeting"></span>!
+          </h2>
+          <div class="menu">
+            <button
+              id="withdraw-btn"
+              style="
+                width: 65%;
+                display: flex;
+                align-items: center;
+                margin: auto;
+                margin-bottom: 10px;
+                margin-top: 70px;
+              "
+            >
+              Withdraw Money
+            </button>
+            <button
+              id="deposit-btn"
+              style="
+                width: 65%;
+                display: flex;
+                align-items: center;
+                margin: auto;
+                margin-bottom: 10px;
+              "
+            >
+              Deposit Money
+            </button>
+          </div>
+          <div id="amount-of-money"></div>
+        </div>
+      </div>
+
+      <div class="heading">
+        <h6 id="heading">
+          Precisely <br />
+          Made For <b>You</b>.
+        </h6>
+        <p style="font-size: 15px">SDL Bank. all rights reserved. 2024.</p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

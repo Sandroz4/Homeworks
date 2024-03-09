@@ -24,7 +24,7 @@ X to exit:
     else:
         print("Invalid option.")
     
-    continue_input = input("Do you want to perform another transaction? (Y/N): ").lower()
-    if continue_input != "y":
+    continue_input = input("Do you want to perform another transaction? (Yes/No): ").lower()
+    if continue_input != "yes":
         print("Exiting...")
         break

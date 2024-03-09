@@ -421,3 +421,46 @@
 
 // // let a = username.indexOf(1)
 // // console.log(a)
+
+
+
+
+// function Car(make, model, year, color){
+//     this.make = make,
+//     this.model = model,
+//     this.year = year,
+//     this.color = color
+// }
+
+// const car1 = new Car("toyota", "mustang", 2024, "red");
+// const car2 = new Car('chevrolet', 'camero', 2025, 'blue')
+
+// console.log(car1.make);
+// console.log(car1.model);
+// console.log(car1.year);
+// console.log(car1.color);
+
+
+// function Person(name, age, lastname){
+//     this.name = name,
+//     this.age = age,
+//     this.lastname = lastname
+//     this.refer = function(){console.log(`your name is ${this.name}.`)}
+// }
+
+// const person1 = new Person('sandro', 16, 'zabakhidze')
+
+// console.log(person1.name)
+// console.log(person1.age)
+// console.log(person1.lastname)
+
+// person1.refer()
+
+
+
+
+
+
+
+
+
