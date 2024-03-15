@@ -1,0 +1,8 @@
+#myDiv{
+    background-color: #ff0000; 
+}
+  
+#myDiv.hasP{
+    background-color: #ffcc00; /
+}
+  
