@@ -1,32 +1,39 @@
 const child = document.getElementById("child-container");
+const parent = document.getElementById("parent-container");
 
-let left = 0;
-let y = 0;
-let direct = "right"
+let modifier = 5;
 
-const moveRight = setInterval(function(){
-    if(direct == "right"){
-        left++;
-        if(left == 300){
-            direct = "bottom"
-        }
-    } else if(direct == "bottom"){
-        y++;
-        if(y == 300){
-            direct = "left";
-        }
-    } else if(direct == "left"){
-        left--;
-        if(left == 0){
-            direct = "top"
-        }
-    } else{
-        y--;
-        if(y == 0 && left == 0){
-            clearInterval(moveRight);
-        }
-    }
+child.style.top = '0px';
+child.style.left = '0px';
 
-    child.style.left = left + 'px';
-    child.style.top = y + 'px';
-}, 10);
+window.addEventListener("keydown", (event) => {
+  const { style } = child;
+  const parentRect = parent.getBoundingClientRect();
+  const childRect = child.getBoundingClientRect();
+  
+  switch (event.key) {
+    case "ArrowUp":
+      if (childRect.top > parentRect.top) {
+        style.top = `${parseInt(style.top) - modifier}px`;
+      }
+      break;
+
+    case "ArrowDown":
+      if (childRect.bottom < parentRect.bottom) {
+        style.top = `${parseInt(style.top) + modifier}px`;
+      }
+      break;
+
+    case "ArrowLeft":
+      if (childRect.left > parentRect.left) {
+        style.left = `${parseInt(style.left) - modifier}px`;
+      }
+      break;
+
+    case "ArrowRight":
+      if (childRect.right < parentRect.right) {
+        style.left = `${parseInt(style.left) + modifier}px`;
+      }
+      break;
+  }
+});
