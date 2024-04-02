@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body{
+    background: #0f0f0f;
+}
+.fa-solid{
+    color: white;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.ytlogo{
+    width: 7.5em;
+    margin-left: 0.5em;
+}
+.search-bar{
+    flex-grow: 0.8;
+    display: flex;
+    margin: 0 15rem 0 15rem;
+    
+}
+.search-input{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 3rem;
+    margin-right: 10px;
+    background: #121212;
+    border: none;
+    color: white;
+}
+#chico{
+    width: 3em;
+    border-radius: 10em;
+    margin-right: 1em;
+}
+#searchicons{
+    display: flex;
+    padding: 1rem;
+}
+.fa-solid,fa-magnifying-glass{
+    margin-right: 1em;
+    padding: 3em;
+}
+.fa-solid,fa-microphone{
+    margin-left: 3px;
+    padding: 2px;
+}
+.sidebar {
+    width: 35%; /* Adjust the width as needed */
+    background: #0f0f0f;
+    color: white;
+    padding: 2rem;
+    margin-left: 2rem;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+.main{
+    display: flex;
+}
+#iman{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 200px;
+}
+.first-sub{
+    display: flex;
+}
+
+#goa{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 200px;
+}
+.second-sub{
+    display: flex;
+}
+#bro{
+    width: 1.5rem;
+    height: 1.5rem;;
+    border-radius: 200px;
+}
+.fourth-sub{
+    display: flex;
+}
+.next-img{
+    margin-left: 0.5rem;
+}
+.bottom-corner-sidebar{
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+.firsttrip{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+.firsttripimg{
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 17.5px;
+    width: 15rem;
+    padding: 0.5rem;
+    transition: .5s ease;
+}
+.firsttripimg:hover{
+    transform: scale(1.02);
+}
+.firsttrip p{
+    color: white;
+}
+.sidebar-top-img{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+.sidebar-top{
+    display: flex;
+}
+.sidebar-middle-image{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+.sidebar-middle{
+    display: flex;
+}
+.video-title{
+    display: flex;
+    margin-left: 1.5rem;
+    margin-top: -0.8rem;
+    font-size: 1rem;
+}
+.view-count{
+    display: flex;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.8rem;
+}
+.top-suggested{
+    display: flex;
+    margin-left: 5.8rem;
+}
+.top-suggested button{
+    padding: 0.35rem;
+    border-radius: 0.5rem;
+    background: #272727;
+    border: none;
+    color: white;
+    margin-left: 1rem;
+}
+hr{
+    background-color: #3f3f3f;
+}
+#shorts1{
+    width: 20rem;
+    border-radius: 1rem;
+}
+.firsttrip{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 21.8rem;
+    margin-right: 32.5rem;
+    margin-top: 1rem;
+}
+.shorts-buttons{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+}
+.shorts-buttons button{
+    background: #272727;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem 0 1rem;
+    margin-left: 1rem;
+    border-radius: 3rem;
+}
+.shorts-buttons button img{
+    width: 1.3rem;
+}
+
+.shorts-video{
+    display: flex;
+}
+#almubcover1{
+    width: 3rem;
+    margin-left: 1rem;
+    border-radius: 0.5rem;
+}
+.shorts-buttons p{
+    text-align: center;
+    margin-left: 1rem;
+    margin-top: 0.2rem;
+}
+.vid-shorts{
+    display: flex;
+    flex-direction: column;
+}
