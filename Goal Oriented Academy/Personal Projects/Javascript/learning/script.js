@@ -462,5 +462,149 @@
 
 
 
+// const numbers = [1,2,3,4,5]
+
+
+// const isEven = (number) => number % 2 === 0;
+
+
+// const evenNumbers = numbers.filter(isEven)
+
+// console.log(evenNumbers)
+
+// const numbers = [1, 2, 3, 4, 5, 6]
+
+// const double = (i) => i *2
+
+// const doubleNumbers = numbers.map(double)
+
+// console.log(doubleNumbers)
+
+// const words = ['apple', 'banana', ' cherry', 'date', 'fig', 'grape']
+
+
+
+// const longWords = (word) => word.length > 5;
+
+// const result = words.filter(longWords)
+
+// console.log(result)
+
+
+
+// const people = [
+//     { name: 'alice', age: 25},
+//     { name: 'sandro', age: 15},
+//     { name: 'davit', age: 18},
+//     { name: 'gio', age: 19}
+// ]
+
+
+// const isAdult = (person) => person.age >= 18;
+
+
+// const adults = people.filter(isAdult)
+
+// console.log(adults)
+
+
+
+
+// const numbers = [1,2,3,4,5]
+
+
+// const square = (number) => number ** 2;
+
+
+// const squares = numbers.map(square)
+
+// console.log(squares)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const people = [
+//     { name: 'alice', age: 25},
+//     { name: 'sandro', age: 15},
+//     { name: 'davit', age: 18},
+//     { name: 'gio', age: 19}
+// ]
+
+
+// const getName = (person) => person.name;
+// const getAge = (person) => person.age
+
+// const names = people.map(getName)
+// const ages = people.map(getAge)
+
+// console.log(names, ages)
+
+
+
+//node '.\Personal Projects\Javascript\learning\script.js'
+
+
+// // Custom filter function
+// const manualFilter = (array, callback) => {
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//       if (callback(array[i], i, array)) {
+//         result.push(array[i]);
+//       }
+//     }
+//     return result;
+//   };
+  
+//   // Array of numbers
+//   const numbers = [1, 2, 3, 4, 5, 6];
+  
+//   // Callback function to test whether a number is even
+//   const isEven = (number) => number % 2 === 0;
+  
+//   // Use manualFilter to create a new array with only even numbers
+//   const evenNumbers = manualFilter(numbers, isEven);
+  
+//   console.log(evenNumbers); // Output: [2, 4, 6]
+
+
+// // Custom filter function
+// const manualFilter = (array, callback) => {
+//     const result = [];
+//     for (let i = 0; i < array.length; i++) {
+//       if (callback(array[i], i, array)) {
+//         result.push(array[i]);
+//       }
+//     }
+//     return result;
+//   };
+  
+//   const items = [
+//     { name: "apple", type: "fruit" },
+//     { name: "carrot", type: "vegetable" },
+//     { name: "banana", type: "fruit" },
+//     { name: "spinach", type: "vegetable" }
+//   ];
+  
+//   const isFruit = (item) => item.type === "fruit";
+  
+//   const fruits = manualFilter(items, isFruit);
+  
+//   console.log(fruits); 
+
+
 
 
