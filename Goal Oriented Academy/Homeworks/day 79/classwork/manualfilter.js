@@ -1,10 +1,12 @@
 // 1 manualfilter
 
 
-function manualFilter(predicateFunc, arr) {
+//                    isEven   [1, 2, 3, 4, 5]
+function manualFilter(subFunc, arr) {
     const newArr = [];
     for (let i = 0; i < arr.length; i++) {
-        if (predicateFunc(arr[i])) {
+//          isEven([1, 2, 3, 4, 5][i])
+        if (subFunc(arr[i])) {
             newArr.push(arr[i]);
         }
     }
