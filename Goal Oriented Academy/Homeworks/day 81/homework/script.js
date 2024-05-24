@@ -55,9 +55,28 @@
 
 
 
+
+
+
+
+
+
+
 // 3. თქვენ გადმოგეცემათ სახელების სია. დავალებაა, რომ დააბრუნოთ 
 // ახალი სია, სადაც ყველა სიტყვა იქნება capitalize ვარიანტში, გამოიყენეთ map.
 
+
+// function capitalizeNames(names){
+//     return names.map(function(name){
+//         let firstLetter = name.charAt(0).toUpperCase();
+//         let restWord = name.slice(1).toLowerCase();
+
+//         return firstLetter + restWord
+//     })
+// }
+
+
+// console.log(capitalizeNames(['alice', 'bob', 'charlie', 'dave'])); 
 
 // function capitalizeNames(names) {
 //     return names.map(function(name) {
@@ -86,9 +105,37 @@
 
 
 
+
+
+
+
+
+
+
   
 // // 4. თქვენ გადმოგეცემათ სახელების სია. დავალებაა, რომ დააბრუნოთ ახალი
 // //  სია, სადაც გექნებათ მარტო ის სახელები, რომლებიც იწყებიან დიდი ასოთი და მათი სიგრძე არ აღემატება 5-ს.
+
+
+
+
+// const names = ['sandro', 'Luka', 'Giorguna', 'Nikolozi'];
+
+
+// function capitalizeFive(names){
+//     return names.filter(function(name){
+//         const firstLetter = name.charAt(0);
+//         const firstLetterUppercase = firstLetter === firstLetter.toUpperCase()
+
+//         let length = name.length
+
+//         return firstLetter && length > 5
+//     })
+// }
+
+// const res = capitalizeFive(names);
+// console.log(res);
+
 
 // const names = ['sandro', 'Luka', 'Giorguna', 'Nikolozi'];
 
@@ -112,8 +159,32 @@
 
 
 
+
+
+
+
 // // 5. თქვენ გადმოგეცემათ მთელი რიცხვების სია. დავალებაა, რომ დააბრუნოთ 
 // // ახალი სია, სადაც იქნება მარტო 20-ზე მეტი 5-ის ჯერადები.
+
+
+
+// const numbers = [5,10,15,20,25,30]
+// let newArr = []
+
+// function fiveMoreTwenty(arr){
+//     arr.filter(function(num){
+//         if(num > 20 && num % 5 === 0){
+//             newArr.push(num)
+//         }
+//     });
+// }
+
+
+// fiveMoreTwenty(numbers);
+
+// console.log(newArr);
+
+
 
 
 // const numbers = [5, 10, 20, 25, 30];
