@@ -1,5 +1,5 @@
-// // 3. You will be presented with a list of names. The task is to bring it back
-// // New list with all words in the capitalize option, use map.
+// // // 3. You will be presented with a list of names. The task is to bring it back
+// // // New list with all words in the capitalize option, use map.
 
 
 // const names = ['sandro', 'giorguna', 'jangira']
