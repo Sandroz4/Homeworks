@@ -13,3 +13,5 @@
 
 // let result = multipleAndGreater(ages)
 // console.log(result)
+
+//homework
