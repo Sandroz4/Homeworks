@@ -1,1 +1,0 @@
-//explained how web and browsing work
