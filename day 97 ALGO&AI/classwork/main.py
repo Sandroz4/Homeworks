@@ -1,24 +1,24 @@
-import numpy as np
-example_input = [1, .2, .1, .05, .2]
-example_weights = [.2, .12, .4, .6, .90]
+# import numpy as np
+# example_input = [1, .2, .1, .05, .2]
+# example_weights = [.2, .12, .4, .6, .90]
 
-input_vector = np.array(example_input)
-weights = np.array(example_weights)
-bias_weight = .2
-activation_level = np.dot(input_vector, weights) + (bias_weight * 1)
-threshold = 0.5
-if activation_level >= threshold:
-    perceptron_output = 1
-else:
-    perceptron_output = 0
-perceptron_output
+# input_vector = np.array(example_input)
+# weights = np.array(example_weights)
+# bias_weight = .2
+# activation_level = np.dot(input_vector, weights) + (bias_weight * 1)
+# threshold = 0.5
+# if activation_level >= threshold:
+#     perceptron_output = 1
+# else:
+#     perceptron_output = 0
+# perceptron_output
 
 
-expected_output = 0
-new_weights = []
-for i, x in enumerate(example_input):
-    new_weights.append(weights[i] + (expected_output - perceptron_output) * x)
-weights = np.array(new_weights)
+# expected_output = 0
+# new_weights = []
+# for i, x in enumerate(example_input):
+#     new_weights.append(weights[i] + (expected_output - perceptron_output) * x)
+# weights = np.array(new_weights)
 
 
 # # Hobson Lane, Hannes Hapke, Cole Howard - Natural Language Processing in Action_ Understanding, analyzing, and generating text with Python-Manning Publications (2019).pdf     162gv-dan
