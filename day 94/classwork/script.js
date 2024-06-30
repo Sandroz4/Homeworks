@@ -1,0 +1,78 @@
+// const promise = new Promise((resolve, reject) => {
+
+// });
+
+// console.log(promise)
+
+// const inventory = {
+//     sunglasses: 1900,
+//     pants: 100,
+//     bags: 89
+// }
+
+
+// const myExecutor = (resolve,reject) => {
+//     if(inventory.sunglasses > 0) resolve('sunglasses order processed');
+//     else reject('item is sold ou')
+// }
+
+// const orderSunglasses = () => {
+//     return new Promise(myExecutor)
+// }
+
+// const orderPromise = new Promise(myExecutor)
+
+// console.log(orderPromise)
+
+
+// const pantsCount = 1000
+
+// const myFirstPromise = new Promise((resolve, reject) => {
+//     if(pantsCount > 0){
+//         resolve('You can purchase')
+//     } else{
+//         reject('Pants are sold out')
+//     }
+// })
+
+// console.log(myFirstPromise)
+
+  
+// const subCount = 600
+
+// const subPromise = new Promise((resolve, reject) => {
+//     if(subCount > 40){
+//         resolve('you are above 40')
+//     }else{reject('sadly you are not famous')}
+// })
+
+// console.log(subPromise)
+
+// console.log('start');
+
+
+// //ასინქრონიზირებული ოპერაცია
+// setTimeout(() => {
+//     console.log('Opaa')
+// }, 1000);
+
+
+// console.log('end');
+
+
+// const age = 18
+
+
+// const agePomise = new Promise((resolve, reject) => {
+//     if(age > 16){
+//         resolve('u are allowed to drink')
+//     }else{reject('u are a minor')}
+// })
+
+// console.log(agePomise)
+
+// setTimeout(()=>{
+//     console.log('helloo')
+// }, 2000)
+
+// console.log('lol')
