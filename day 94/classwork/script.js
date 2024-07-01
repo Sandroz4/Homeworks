@@ -76,3 +76,25 @@
 // }, 2000)
 
 // console.log('lol')
+
+
+
+const pantsCount = 100;
+
+const executorFunction = (resolve, reject) => {
+    if (pantsCount > 50) {
+        setTimeout(() => { resolve('pants are available') },1000);
+    } else {
+        setTimeout(() => { reject('pants are sold out') },1000);
+    }
+}
+
+const orderPants = () => {
+    return new Promise(executorFunction);
+}
+
+orderPants().then((resolved)=>{
+    console.log(resolved)
+}, (rejected)=>{
+    console.log(rejected)
+})
