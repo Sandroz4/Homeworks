@@ -69,32 +69,32 @@
 //     }else{reject('u are a minor')}
 // })
 
-// console.log(agePomise)
+// // console.log(agePomise)
 
-// setTimeout(()=>{
-//     console.log('helloo')
-// }, 2000)
+// // setTimeout(()=>{
+// //     console.log('helloo')
+// // }, 2000)
 
-// console.log('lol')
+// // console.log('lol')
 
 
 
-const pantsCount = 100;
+// const pantsCount = 100;
 
-const executorFunction = (resolve, reject) => {
-    if (pantsCount > 50) {
-        setTimeout(() => { resolve('pants are available') },1000);
-    } else {
-        setTimeout(() => { reject('pants are sold out') },1000);
-    }
-}
+// const executorFunction = (resolve, reject) => {
+//     if (pantsCount > 50) {
+//         setTimeout(() => { resolve('pants are available') },1000);
+//     } else {
+//         setTimeout(() => { reject('pants are sold out') },1000);
+//     }
+// }
 
-const orderPants = () => {
-    return new Promise(executorFunction);
-}
+// const orderPants = () => {
+//     return new Promise(executorFunction);
+// }
 
-orderPants().then((resolved)=>{
-    console.log(resolved)
-}, (rejected)=>{
-    console.log(rejected)
-})
+// orderPants().then((resolved)=>{
+//     console.log(resolved)
+// }, (rejected)=>{
+//     console.log(rejected)
+// })
