@@ -2,12 +2,12 @@
 // different stages of promise resolution.
 
 
-const rejectingPromise = new Promise((_, reject) => {
-    setTimeout(() => {
-        reject(new Error("error"));
-    }, 1000);
-});
+// const rejectingPromise = new Promise((_, reject) => {
+//     setTimeout(() => {
+//         reject(new Error("error"));
+//     }, 1000);
+// });
 
-rejectingPromise.catch((error) => {
-    console.error(error.message);  
-});
+// rejectingPromise.catch((error) => {
+//     console.error(error.message);  
+// });

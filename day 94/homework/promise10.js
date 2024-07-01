@@ -2,3 +2,4 @@
 //  intermediate results sequentially.
 
 
+console.lgo(ss'ddd)
