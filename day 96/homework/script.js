@@ -316,36 +316,283 @@ console.log(delay)
 // 14. Create three Promises that resolve or reject based on random conditions. 
 // Use Promise.all to log all resolved messages or handle the rejection.
 
+// const firstPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         if(delay <= 1000){
+//             resolve('hello')
+//         }
+//         else{
+//             reject('bad')
+//         }
+//     }, delay)
+// })
+
+// const secondPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         if(delay <= 3000){
+//             resolve('hello')
+//         }
+//         else{
+//             reject('bad')
+//         }
+//     }, delay)
+// })
+
+// const thirdPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         if(delay > 4000){
+//             resolve('hello')
+//         }
+//         else{
+//             reject('bad')
+//         }
+//     }, delay)
+// })
+
+// Promise.all([firstPromise, secondPromise, thirdPromise])
+//     .then(values => {
+//         console.log(values)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     })
+
+
 // 15. Create three Promises that resolve with numbers after random delays. Use 
 // Promise.all to get the results, then chain another .then to calculate and log the sum of the numbers.
 
-// 16. Create three Promises that resolve with different messages 
-// ("Promise 1", "Promise 2", "Promise 3") after 1, 2, and 3 seconds respectively.
-//  Use Promise.race to log the message from the first Promise that resolves.
+// const firstPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve(5)
+//     }, delay)
+// })
 
-// 17. Create three Promises that resolve with different messages after random delays
-//  between 1 and 5 seconds. Use Promise.race to log the message from the first Promise that resolves.
+// const secondPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve(56)
+//     }, delay)
+// })
+
+// const thirdPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve(7)
+//     }, delay)
+// })
+
+// Promise.all([firstPromise, secondPromise, thirdPromise])
+//     .then(values => {
+//         let sum = 0
+//         for(let i = 0; i<values.length;i++){
+//             sum+=values[i]
+//         }
+//         console.log(sum)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     })
+
+
+// // 16. Create three Promises that resolve with different messages 
+// // ("Promise 1", "Promise 2", "Promise 3") after 1, 2, and 3 seconds respectively.
+// //  Use Promise.race to log the message from the first Promise that resolves.
+
+// const firstPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('promise 1')
+//     }, 1000)
+// })
+
+// const secondPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('promise 2')
+//     }, 2000)
+// })
+
+// const thirdPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('promise 3')
+//     }, 3000)
+// })
+
+// Promise.race([firstPromise, secondPromise, thirdPromise])
+//     .then(values => {
+//         console.log(values)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     })
+
+// // 17. Create three Promises that resolve with different messages after random delays
+// //  between 1 and 5 seconds. Use Promise.race to log the message from the first Promise that resolves.
+
+// const firstPromise = new Promise((resolve, reject) => {
+//     const delay = Math.floor(Math.random()*5000) 
+//     setTimeout(()=>{
+//         resolve('promise 1')
+//     }, delay)
+// })
+
+// const secondPromise = new Promise((resolve, reject) => {
+//     const delay1 = Math.floor(Math.random()*5000) 
+//     setTimeout(()=>{
+//         resolve('promise 2')
+//     }, delay1)
+// })
+
+// const thirdPromise = new Promise((resolve, reject) => {
+//     const delay2 = Math.floor(Math.random()*5000) 
+//     setTimeout(()=>{
+//         resolve('promise 3')
+//     }, delay2)
+// })
+
+// Promise.race([firstPromise, secondPromise, thirdPromise])
+//     .then(values => {
+//         console.log(values)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     })
 
 // 18. Create three Promises where one of them resolves immediately with the message 
 // "Instant Promise". Use Promise.race to log the message from the first Promise that resolves.
 
-// 19. Create three Promises where one of them rejects after 2 seconds with an error
-//  message "Promise failed". Use Promise.race to handle the resolution or rejection 
-//  and log the result or error.
+// const firstPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('promise 1')
+//     })
+// })
 
-// 20. Create three Promises that resolve based on random conditions 
-// (e.g., if a random number is greater than 0.5, resolve with a message; otherwise, 
-//     resolve after 2 seconds with a different message). Use Promise.race to log the
-//      message from the first Promise that resolves.
+// const secondPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('promise 2')
+//     })
+// })
 
-// 5)
+// const thirdPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('promise 3')
+// })
 
-// 21. Fetch data from a URL and log the response to the console.
+// Promise.race([firstPromise, secondPromise, thirdPromise])
+//     .then(values => {
+//         console.log(values)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     })
 
-// 22. Fetch data from an API and display it on a web page.
+// // 19. Create three Promises where one of them rejects after 2 seconds with an error
+// //  message "Promise failed". Use Promise.race to handle the resolution or rejection 
+// //  and log the result or error.
+
+// const firstPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         reject('promise 1')
+//     })
+// })
+
+// const secondPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         reject('promise 2')
+//     }, 2000)
+// })
+
+// const thirdPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         reject('promise 3')
+//     })
+// })
+
+// Promise.race([firstPromise, secondPromise, thirdPromise])
+//     .then(values => {
+//         console.log(values)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     })
+
+// // 20. Create three Promises that resolve based on random conditions 
+// // (e.g., if a random number is greater than 0.5, resolve with a message; otherwise, 
+// //     resolve after 2 seconds with a different message). Use Promise.race to log the
+// //      message from the first Promise that resolves.
+// const firstPromise = new Promise((resolve, reject) => {
+//     const delay = Math.floor(Math.random() * 5000);
+//     setTimeout(() => {
+//         if (delay <= 2000) {
+//             resolve('mes1');
+//         } else {
+//             reject('mes2');
+//         }
+//     }, delay);
+// });
+
+// const secondPromise = new Promise((resolve, reject) => {
+//     const delay1 = Math.floor(Math.random() * 5000);
+//     setTimeout(() => {
+//         if (delay1 <= 3000) {
+//             resolve('mes1');
+//         } else {
+//             reject('mes2');
+//         }
+//     }, delay1);
+// });
+
+// const thirdPromise = new Promise((resolve, reject) => {
+//     const delay2 = Math.floor(Math.random() * 5000);
+//     setTimeout(() => {
+//         if (delay2 <= 3000) {
+//             resolve('mes1');
+//         } else {
+//             reject('mes2');
+//         }
+//     }, delay2);
+// });
+
+// Promise.race([firstPromise, secondPromise, thirdPromise])
+//     .then(winner => {
+//         console.log('The first resolved promise:', winner);
+//     })
+//     .catch(error => {
+//         console.log('The first rejected promise:', error);
+//     });
+
+
+// // 21. Fetch data from a URL and log the response to the console.
+// const obj = fetch('https://fakestoreapi.com/products/1')
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log(data)
+//     })
+//     .catch(err => console.log(err))
+
+    
+// // 22. Fetch data from an API and display it on a web page.
+
+// const p = document.getElementById('title')
+// const img = document.getElementById('product-img')
+// const price = document.getElementById('price')
+
+
+// const obj = fetch('https://fakestoreapi.com/products/1')
+//     .then(res => res.json())
+//     .then(data => {
+//         p.textContent = data.title
+//         img.src = data.image
+//         price.textContent = data.price 
+//         img.width = 200
+//     })
+//     .catch(err => console.log(err))
+
 
 // 23. Fetch JSON data from an API and display specific information
 // (e.g., title, description) on a webpage.
+// const obj = fetch('https://fakestoreapi.com/products/1')
+//     .then(res => res.json())
+//     .then(data => {
+//         console.log(data)
+//     })
+//     .catch(err => console.log(err))
 
 // 24. Fetch data from an API and create a dropdown/select element
 //  with the fetched data.
