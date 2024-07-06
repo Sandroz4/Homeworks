@@ -204,13 +204,46 @@
 //         console.error('Something went wrong:', error);  
 //     });
 
+function getRandomIntInclusive(min, max){
+    const minCeiled = Math.ceil(min);
+    const maxFloored = Math.floor(max);
+    return Math.floor(Math.random() * (maxFloored - minCeiled + 1) + minCeiled);
+}
+let delay = getRandomIntInclusive(1, 5) * 1000
 
 
+console.log(delay)
 
-// 11. Create three Promises that resolve with different messages 
-// ("Promise 1", "Promise 2", "Promise 3") after 1, 2, and 3 seconds respectively.
-//  Use Promise.all to log all messages once all Promises are resolved.
 
+// // 11. Create three Promises that resolve with different messages 
+// // ("Promise 1", "Promise 2", "Promise 3") after 1, 2, and 3 seconds respectively.
+// //  Use Promise.all to log all messages once all Promises are resolved.
+
+// const firstPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('Promise 1')
+//     }, 1000)
+// })
+
+// const secondPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('Promise 2')
+//     }, 2000)
+// })
+
+// const thirdPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('Promise 3')
+//     }, 10000)
+// })
+
+// Promise.all([firstPromise, secondPromise, thirdPromise])
+//     .then(values => {
+//         console.log(values)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     })
 
 
 // 12. Create three Promises that resolve with different messages after random 
