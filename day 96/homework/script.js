@@ -246,13 +246,72 @@ console.log(delay)
 //     })
 
 
-// 12. Create three Promises that resolve with different messages after random 
-// delays between 1 and 5 seconds. Use Promise.all to log all messages once all 
-// Promises are resolved.
+// // 12. Create three Promises that resolve with different messages after random 
+// // delays between 1 and 5 seconds. Use Promise.all to log all messages once all 
+// // Promises are resolved.
 
-// 13. Create three Promises where one of them rejects after 2 seconds with an 
-// error message "Promise failed". Use Promise.all to handle the rejection and 
-// log the error message.
+
+// const firstPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('Promise 1')
+//     }, delay)
+// })
+
+// const secondPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('Promise 2')
+//     }, delay)
+// })
+
+// const thirdPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('Promise 3')
+//     }, delay)
+// })
+
+// Promise.all([firstPromise, secondPromise, thirdPromise])
+//     .then(values => {
+//         console.log(values)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     })
+
+
+// // 13. Create three Promises where one of them rejects after 2 seconds with an 
+// // error message "Promise failed". Use Promise.all to handle the rejection and 
+// // log the error message.
+
+
+// const firstPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('Promise 1')
+//     }, delay)
+// })
+
+// const secondPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         reject('Promise failed')
+//     }, delay)
+// })
+
+// const thirdPromise = new Promise((resolve, reject) => {
+//     setTimeout(()=>{
+//         resolve('Promise 3')
+//     }, delay)
+// })
+
+// Promise.all([firstPromise, secondPromise, thirdPromise])
+//     .then(values => {
+//         console.log(values)
+//     })
+//     .catch(error => {
+//         console.log(error)
+//     })
+
+// git add .
+// git commit -m "commit"
+// git push
 
 // 14. Create three Promises that resolve or reject based on random conditions. 
 // Use Promise.all to log all resolved messages or handle the rejection.
