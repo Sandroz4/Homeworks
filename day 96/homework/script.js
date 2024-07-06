@@ -74,21 +74,51 @@
 
 
 
+// // 5. Create a Promise which rejects after 2 seconds
+// //  with an error message "Task 3 failed". Handle the rejection with a .catch 
+// //  to log the error message.
+
+// const resolvePromise = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         reject('task 3 failed');  
+//     }, 2000);  
+// });
+
+// resolvePromise.catch((error)=>{console.log('error: ', error)})
 
 
 
 
 
-// 5. Create a function that returns a Promise which rejects after 2 seconds
-//  with an error message "Task 3 failed". Handle the rejection with a .catch 
-//  to log the error message.
 
-// 6. Create a function that returns a Promise which resolves after a random
-//  delay between 1 and 5 seconds with the message "Task 1 complete".
 
-// 7. Create a function that returns a Promise which resolves after a random 
-// delay between 1 and 3 seconds with the message "First". Chain another .then
-//  that waits for another random delay between 1 and 3 seconds before logging "Second".
+// // 7. Create a function that returns a Promise which resolves after a random 
+// // delay between 1 and 3 seconds with the message "First". Chain another .then
+// //  that waits for another random delay between 1 and 3 seconds before logging "Second".
+
+// function randomDelayPromise(){
+//     const delay = Math.floor(Math.random()*3000) + 1000
+
+//     return new Promise((resolve) => {
+//         setTimeout(()=>{
+//             resolve('first')
+//         }, delay)
+//     })
+// }
+
+// randomDelayPromise()
+//    .then((message) => {
+//     console.log(message)
+//     const secondDelay = Math.floor(Math.random()*3000) + 1000
+
+//     return new Promise((resolve) => {
+//         setTimeout(()=>{
+//             resolve('second')
+//         }, secondDelay)
+//     }).then((message)=>{
+//         console.log(message)
+//     })
+//    })
 
 // 8. Create a function that returns a Promise which rejects after a random 
 // delay between 1 and 4 seconds with an error message "Task 3 failed". Handle
