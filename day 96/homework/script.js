@@ -89,9 +89,6 @@
 
 
 
-
-
-
 // // 7. Create a function that returns a Promise which resolves after a random 
 // // delay between 1 and 3 seconds with the message "First". Chain another .then
 // //  that waits for another random delay between 1 and 3 seconds before logging "Second".
@@ -120,24 +117,101 @@
 //     })
 //    })
 
-// 8. Create a function that returns a Promise which rejects after a random 
-// delay between 1 and 4 seconds with an error message "Task 3 failed". Handle
-//  the rejection with a .catch to log the error message.
 
-// 9. Create a function that returns a Promise which resolves after a random 
-// delay between 1 and 5 seconds with the message "Task 1 complete" if the random 
-// number is greater than 0.5, otherwise, it should resolve with the message "Task 1 was quick".
 
-// 10. Create a function that returns a Promise which resolves after a random 
-// delay between 1 and 4 seconds. If the random number is less than 0.3, reject 
-// with an error message "Task 3 failed". Otherwise, resolve with the message 
-// "Task 3 complete". Handle the rejection with a .catch to log the error message.
+// // 8. Create a function that returns a Promise which rejects after a random 
+// // delay between 1 and 4 seconds with an error message "Task 3 failed". Handle
+// //  the rejection with a .catch to log the error message.
+
+
+// function randomDelay(){
+//     return new Promise((resolve, reject)=>{
+//         const delay = Math.floor(Math.random()*4000) + 1000
+
+//         setTimeout(()=>{
+//             reject('task 3 failed')
+//         }, delay)
+//     })
+// }
+
+// randomDelay().catch((error)=>{
+//     console.log(error)
+// })
 
  
+
+
+
+
+// // 9. Create a function that returns a Promise which resolves after a random 
+// // delay between 0 and 5 seconds with the message "Task 1 complete" if the random 
+// // number is greater than 0.5, otherwise, it should resolve with the message "Task 1 was quick".
+
+// function randomDelay(){
+//     return new Promise((resolve, reject) => {
+//         const delay = Math.floor(Math.random()*5000)  
+
+//         if(delay >= 1000){
+//             resolve('Task 1 complete')
+//         }
+//         else{
+//             resolve('task 1 was quick')
+//         }
+
+//     })
+// }
+
+
+// randomDelay().then(message => {
+//     console.log(message)
+// })
+
+
+
+
+
+
+
+
+
+// // // 10. Create a function that returns a Promise which resolves after a random 
+// // // delay between 1 and 4 seconds. If the random number is less than 0.3, reject 
+// // // with an error message "Task 3 failed". Otherwise, resolve with the message 
+// // // "Task 3 complete". Handle the rejection with a .catch to log the error message.
+
+
+// function randomDelay() {
+//     return new Promise((resolve, reject) => {
+//         const delay = Math.floor(Math.random() * 4000);
+
+//         if (delay <= 1000) {
+//             reject('task 3 failed');
+//         } else {
+//             resolve('task 3 complete');
+//         }
+//     });
+// }
+
+// randomDelay()
+//     .catch(error => {
+//         console.log(error);  
+//         throw error;  
+//     })
+//     .then(res => {
+//         console.log(res);  
+//     })
+//     .catch(error => {
+//         console.error('Something went wrong:', error);  
+//     });
+
+
+
 
 // 11. Create three Promises that resolve with different messages 
 // ("Promise 1", "Promise 2", "Promise 3") after 1, 2, and 3 seconds respectively.
 //  Use Promise.all to log all messages once all Promises are resolved.
+
+
 
 // 12. Create three Promises that resolve with different messages after random 
 // delays between 1 and 5 seconds. Use Promise.all to log all messages once all 
