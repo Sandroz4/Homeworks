@@ -594,7 +594,21 @@ console.log(delay)
 //     })
 //     .catch(err => console.log(err))
 
-// 24. Fetch data from an API and create a dropdown/select element
-//  with the fetched data.
 
-// 25. Fetch image URLs from an API and display them on a webpage.
+// // 25. Fetch image URLs from an API and display them on a webpage.
+
+// function fetchAndUpdateImage(url, imgElement) {
+//     fetch(url)
+//         .then(res => res.json())
+//         .then(data => {
+//             imgElement.src = data.image;
+//             imgElement.width = 300;
+//         })
+//         .catch(err => console.log(err));
+// }
+
+// const img = document.getElementById('product-img');
+// const img2 = document.getElementById('product-img2');
+
+// fetchAndUpdateImage('https://fakestoreapi.com/products/1', img);
+// fetchAndUpdateImage('https://fakestoreapi.com/products/3', img2);
