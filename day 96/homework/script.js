@@ -23,10 +23,8 @@
 
 // rejectPromise.catch(message => {
 //     console.log(message)
-// })
-
-
-
+// })sss
+ 
 
 // // 3. Create a Promise that resolves with a number (e.g., 5). Chain a
 // //  .then handler to double the number and return it, then chain another 
@@ -595,7 +593,7 @@ console.log(delay)
 //     .catch(err => console.log(err))
 
 
-// // 25. Fetch image URLs from an API and display them on a webpage.
+// 25. Fetch image URLs from an API and display them on a webpage.
 
 // function fetchAndUpdateImage(url, imgElement) {
 //     fetch(url)
@@ -612,3 +610,7 @@ console.log(delay)
 
 // fetchAndUpdateImage('https://fakestoreapi.com/products/1', img);
 // fetchAndUpdateImage('https://fakestoreapi.com/products/3', img2);
+
+// console.log(img2)
+
+ 
