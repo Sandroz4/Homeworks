@@ -204,3 +204,127 @@
 // const sentence = `The area of a rectangle with length ${length} and width ${width} is ${area}.`
 
 // console.log(sentence)
+
+
+// Short Conditionals:
+
+// // 1. Use the `&&` operator to conditionally log a message if a variable is true.
+
+// if(5 > 4 && 5 < 8){
+//     console.log('success')
+// }
+
+
+
+// // 2. Use the `||` operator to set a default value for a variable if it is falsy.
+
+// let main = sub || defaultValue;
+ 
+
+
+// // 3. Use the ternary operator to assign a value based on a condition.
+// let result = condition ? valueIfTrue : valueIfFalse;
+ 
+
+// // 4. Write a short conditional using the `&&` operator to call a function only if a variable is not null.
+// myVar && myFunction();
+
+
+// // 5. Use the `||` operator to return the first truthy value from a list of variables.
+// let firstName = ''
+// let lastName = 'Doe'
+// let nickname = 'JD'
+
+// let displayName = firstName || nickname || lastName || 'Anonymous'
+
+// console.log(displayName)
+
+// // 6. Use the ternary operator to log different messages based on whether a number is positive or negative.
+
+// const number = 5
+
+// const positive = number >= 0 ? 'positive' : 'negative'
+
+// console.log(positive)
+
+// // 9. Use the ternary operator to set the value of a variable based on the length of a string.
+
+// const str = "Hello World!"
+// const result = (str.length > 10) ? "Long" : "Short"
+// console.log(result)
+
+
+// Array method map():
+
+// // 1. Use the `map` function to create a new array with each element doubled.
+
+// const array = [1,2,3,4,5,6]
+
+// const arrayDoubled = []
+
+// array.map((value)=>{
+//     arrayDoubled.push(value*2)
+// })
+
+// console.log(arrayDoubled)
+
+// // 2. Apply the `map` function to convert an array of strings to uppercase.
+
+// const strings = ['sandro', 'giorgi', 'luka', 'misho']
+
+// const stringsUpper = []
+
+// strings.map((value)=>{
+//     stringsUpper.push(value.toUpperCase())
+// })
+
+// console.log(stringsUpper)
+
+// // 3. Use the `map` function to extract a specific property from an array of objects.
+// const array = [1,2,3,4,5,6]
+
+// const arraySpecific = []
+
+// array.map((value)=>{
+//     if(value > 3){
+//         arraySpecific.push(value)
+//     }else{'pass'}
+// })
+
+// console.log(arraySpecific)
+
+// // 4. Implement the `map` function to add 5 to each element in an array of numbers.
+// const array = [1,2,3,4,5,6]
+
+// const arrayAddFive = []
+
+// array.map((value)=>{
+//     arrayAddFive.push(value+5)
+// })
+
+// console.log(arrayAddFive)
+
+// // 5. Use the `map` function to convert an array of numbers to their square roots.
+// const array = [1,2,3,4,5,6]
+
+// const arrayRoot = []
+
+// array.map((value)=>{
+//     arrayRoot.push(Math.sqrt(value))
+// })
+
+// // console.log(arrayRoot)
+
+// // 7. Use the `map` function to create a new array with the lengths of each string in an array of strings.
+// const stringsArray = ["apple", "banana", "cherry"]
+
+// const lengthsArray = stringsArray.map(string => string.length)
+
+// console.log(lengthsArray);
+
+// // 9. Use the `map` function to create an array of boolean values indicating whether each number in an array is even.
+// const numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+// const isEvenArray = numbersArray.map(number => number % 2 === 0)
+
+// console.log(isEvenArray)
