@@ -328,3 +328,191 @@
 // const isEvenArray = numbersArray.map(number => number % 2 === 0)
 
 // console.log(isEvenArray)
+
+
+// Array method filter():
+
+// // 1. Use the `filter` function to create a new array with only even numbers.
+// const numbers = [1, 2, 3, 4, 5, 6, 7];
+
+// const evenNumbers = numbers.filter((num) => {
+//     return num % 2 === 0
+// })
+
+// console.log(evenNumbers)
+
+// // 2. Apply the `filter` function to extract all strings longer than 5 characters from an array.
+// const strings = ['sandro', 'giorgi', 'nikolozi', 'mishiko', 'ana']
+
+// const stringsMoreThenFive = strings.filter((str) => {
+//     return str.length > 5
+// })
+
+// console.log(stringsMoreThenFive)
+
+// 3. Use the `filter` function to create a new array with objects that have a specific property 
+// value.
+
+// let cars = [
+//     { make: 'Honda', model: 'Civic', year: 2020 },
+//     { make: 'Toyota', model: 'Corolla', year: 2019 },
+//     { make: 'Honda', model: 'Accord', year: 2021 },
+//     { make: 'Ford', model: 'Fusion', year: 2018 }
+// ];
+
+
+// let hondaCars = cars.filter(car => car.make === 'Honda')
+
+// console.log(hondaCars)
+
+
+// // 4. Implement the `filter` function to remove all null or undefined values from an array.
+
+// function customFilter(array) {
+//     return array.filter(item => item !== null && item !== undefined)
+// }
+
+// console.log(customFilter([1, null, 'hello', undefined, 5, null, 10]))
+
+
+// // 5. Use the `filter` function to select all numbers greater than 10 from an array of numbers.
+// const array = [1,2,3,66,6,67,12,31]
+
+// const arrayMoreThanTen = array.filter((num)=> {
+//     return num > 10
+// })
+
+// console.log(arrayMoreThanTen)
+
+// // 6. Apply the `filter` function to create an array of words that start with a specific letter.
+// const words = ['sandro', 'sosa', 'gio', 'spain']
+
+// const wordsS = words.filter((word) => {
+//     return word[0] === 's'
+// })
+
+// console.log(wordsS)
+
+// // 7. Use the `filter` function to extract all prime numbers from an array of numbers.
+// function isPrime(num) {
+//     if (num <= 1) return false;
+//     if (num === 2) return true;
+//     if (num % 2 === 0) return false;
+
+//     for (let i = 3; i <= Math.sqrt(num); i += 2) {
+//         if (num % i === 0) return false;
+//     }
+
+//     return true;
+// }
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// let primeNumbers = numbers.filter(isPrime);
+
+// console.log(primeNumbers);
+
+
+// // 8. Implement the `filter` function to create an array of users who are over a certain age from an 
+// // array of user objects.
+// const users = [
+//     {name: 'sandro', age: 16},
+//     {name: 'giorgi', age: 12},
+//     {name: 'nikolozi', age: 15},
+// ]
+
+// const usersMoreThan13 = users.filter(user => user.age > 13);
+
+// console.log(usersMoreThan13)
+
+// // 9. Use the `filter` function to remove duplicate values from an array.
+// let array = [1, 2, 3, 4, 2, 3, 5, 6, 1, 7, 8, 8, 9, 10]
+
+// let uniqueArray = array.filter((value, index, self) => {
+//     return self.indexOf(value) === index
+// })
+
+// console.log(uniqueArray)
+
+
+// 
+
+
+
+
+// Array method reduce():
+
+// // 1. Use the `reduce` function to calculate the sum of an array of numbers.
+// const numbers = [1,2,3,4,5,6]
+
+// // let sum = 0
+
+// // for(let i of numbers){
+// //     sum += i
+// // }
+
+// // console.log(sum)
+
+// const sum = numbers.reduce((accum, current) => {
+//     return accum + current
+// }, 0)
+
+// console.log(sum)
+
+// // 2. Apply the `reduce` function to concatenate an array of strings into a single string.
+// const strings = ['sandro', 'giorgi', 'nikolozi']
+
+
+// const concatenated = strings.reduce((accum, current) => {
+//     return accum + current
+// })
+
+// console.log(concatenated)
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// const max = numbers.reduce((accum, current) => {
+//     return Math.max(accum, current);
+// }, 0);
+
+// console.log(max)
+
+
+
+// 5. Use the `reduce` function to calculate the total price of items in a shopping cart array.
+// const numbers = [1,2,3,4,5,6]
+
+// // let sum = 0
+
+// // for(let i of numbers){
+// //     sum += i
+// // }
+
+// // console.log(sum)
+
+// const sum = numbers.reduce((accum, current) => {
+//     return accum + current
+// }, 0)
+
+// console.log(sum)
+
+
+// const numbers = [1, 2, 3, 4, 5, 6];
+
+// const product = numbers.reduce((accum, current) => {
+//     return accum * current;
+// }, 1);
+
+// console.log(product) 
+
+
+// // 10. Apply the `reduce` function to create an array of unique values from an array with duplicates.const array = [1, 2, 2, 3, 4, 4, 5];
+
+// const uniqueArray = array.reduce((acc, currentValue) => {
+//     if (acc.indexOf(currentValue) === -1) {
+//         acc.push(currentValue);
+//     }
+//     return acc;
+// }, [])
+
+// console.log(uniqueArray)
