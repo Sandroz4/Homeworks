@@ -553,31 +553,106 @@
 
 // Promises + Async/Await Syntax:
 
-// 1. Create a promise that resolves after 2 seconds and use `then` to log a message.
+// // 1. Create a promise that resolves after 2 seconds and use `then` to log a message.
+// const afterTwoSeconds = new Promise((res, rej) => {
+//     setTimeout(() => {
+//         res('success')
+//     }, 2000)
+// })
+
+// afterTwoSeconds.then((mes) => {
+//     console.log('done')
+// }).catch(err => {
+//     console.log('error')
+// })
 
 
-// 2. Write an async function that waits for a promise to resolve and then logs the result.
+// // 2. Write an async function that waits for a promise to resolve and then logs the result.
+// async function waitForPromise() {
+//     const promise = new Promise((resolve) => {
+//         setTimeout(() => resolve("Promise resolved!"), 1000)
+//     });
 
+//     const result = await promise
+//     console.log(result)
+// }
 
-// 3. Create a promise that rejects with an error and use `catch` to handle the error.
+// waitForPromise();
 
+// // 3. Create a promise that rejects with an error and use `catch` to handle the error.
+// const promise = new Promise((_, reject) => {
+//     setTimeout(() => reject(new Error("Promise rejected!")), 1000);
+// });
 
-// 4. Write an async function that uses `try` and `catch` to handle errors from an awaited promise.
+// promise.catch(error => {
+//     console.error(error.message)
+// });
 
+// // 4. Write an async function that uses `try` and `catch` to handle errors from an awaited promise.
+// async function handlePromiseError() {
+//     const promise = new Promise((_, reject) => {
+//         setTimeout(() => reject(new Error("Promise rejected!")), 1000);
+//     });
 
-// 5. Chain multiple promises together using `then` and `catch` to handle any errors.
+//     try {
+//         const result = await promise;
+//         console.log(result);
+//     } catch (error) {
+//         console.error("Caught an error:", error.message)
+//     }
+// }
 
+// handlePromiseError();
 
-// 6. Write an async function that waits for multiple promises to resolve using `Promise.all`.
+// // 5. Chain multiple promises together using `then` and `catch` to handle any errors.
+// const promise1 = new Promise((resolve) => {
+//     setTimeout(() => resolve(1), 1000)
+// });
 
+// const promise2 = value => new Promise((resolve) => {
+//     setTimeout(() => resolve(value * 2), 1000)
+// });
 
-// 7. Create a promise that resolves with a value and use `then` to transform the value before logging it.
+// promise1
+//     .then(result => promise2(result))
+//     .then(result => console.log(result))
+//     .catch(error => console.error("Caught an error:", error.message))
 
+// // 6. Write an async function that waits for multiple promises to resolve using `Promise.all`.
+// async function waitForAllPromises() {
+//     const promise1 = new Promise((resolve) => {
+//         setTimeout(() => resolve("First promise resolved!"), 1000)
+//     });
 
-// 8. Write an async function that uses `await` to fetch data from an API and logs the result.
+//     const promise2 = new Promise((resolve) => {
+//         setTimeout(() => resolve("Second promise resolved!"), 2000)
+//     });
 
+//     const results = await Promise.all([promise1, promise2])
+//     console.log(results)
+// }
 
-// 9. Use `Promise.race` to handle multiple promises and log the first one to resolve.
+// waitForAllPromises()
 
+// // 7. Create a promise that resolves with a value and use `then` to transform the value before logging it.
+// const promise = new Promise((resolve) => {
+//     setTimeout(() => resolve(10), 1000)
+// });
 
-// 10. Write an async function that retries a failed promise a specified number of times before rejecting. 
+// promise
+//     .then(value => value * 2)
+//     .then(transformedValue => console.log(transformedValue));
+
+// // 8. Write an async function that uses `await` to fetch data from an API and logs the result.
+// async function fetchData() {
+//     try {
+//         const response = await fetch('https://fakestoreapi.com/products/1')
+//         const data = await response.json()
+//         console.log(data)
+//     } catch (error) {
+//         console.error("Error fetching data:", error)
+//     }
+// }
+
+// fetchData()
+
