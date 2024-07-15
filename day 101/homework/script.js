@@ -516,3 +516,68 @@
 // }, [])
 
 // console.log(uniqueArray)
+
+
+// // 1. Create an object using property shorthand notation.
+// const name = 'sandro', age = 30
+// const person = { name, age }
+
+// // 2. Use object destructuring to extract properties from an object into variables.
+// const { name: personName, age: personAge } = person;
+
+// // 3. Implement the spread operator to merge two objects into a new object.
+// const address = { city: 'Tbilisi', country: 'Georgia' };
+// const personWithAddress = { ...person, ...address };
+
+// // 4. Use destructuring to swap the values of two properties in an object.
+// let obj = { a: 1, b: 2 };
+// [obj.a, obj.b] = [obj.b, obj.a];
+
+// // 5. Create a function that takes an object as a parameter and uses destructuring to access its properties.
+// function printPerson({ name, age }) {
+//   console.log(`Name: ${name}, Age: ${age}`);
+// }
+
+// // 6. Use the spread operator to create a shallow copy of an object.
+// const personCopy = { ...person };
+
+// // 7. Implement the spread operator to add new properties to an existing object.
+// const updatedPerson = { ...person, gender: 'male' };
+
+// // 10. Use object destructuring in a function's parameter list to extract specific properties from an argument object.
+// function displayUser({ name, age }) {
+//   console.log(`User: ${name}, Age: ${age}`);
+// }
+
+
+
+// Promises + Async/Await Syntax:
+
+// 1. Create a promise that resolves after 2 seconds and use `then` to log a message.
+
+
+// 2. Write an async function that waits for a promise to resolve and then logs the result.
+
+
+// 3. Create a promise that rejects with an error and use `catch` to handle the error.
+
+
+// 4. Write an async function that uses `try` and `catch` to handle errors from an awaited promise.
+
+
+// 5. Chain multiple promises together using `then` and `catch` to handle any errors.
+
+
+// 6. Write an async function that waits for multiple promises to resolve using `Promise.all`.
+
+
+// 7. Create a promise that resolves with a value and use `then` to transform the value before logging it.
+
+
+// 8. Write an async function that uses `await` to fetch data from an API and logs the result.
+
+
+// 9. Use `Promise.race` to handle multiple promises and log the first one to resolve.
+
+
+// 10. Write an async function that retries a failed promise a specified number of times before rejecting. 
