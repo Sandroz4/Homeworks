@@ -1,0 +1,1 @@
+{"mappings":"AAAA,MAAM,UAAU,SAAS,aAAa,CAAC;AACvC,IAAI;AAEJ,QAAQ,WAAW,GAAG,oBAEtB,UAAU","sources":["src/script.js"],"sourcesContent":["const heading = document.querySelector('h1')\r\nlet num;\r\n\r\nheading.textContent = 'hello parcel Luka'\r\n\r\n// comment"],"names":[],"version":3,"file":"index.44983732.js.map","sourceRoot":"/__parcel_source_root/"}
