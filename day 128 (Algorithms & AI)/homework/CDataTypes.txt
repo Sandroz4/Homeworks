@@ -1,0 +1,31 @@
+`char`
+   - Size: 1 byte (usually 8 bits).
+   - Range:  
+     - `signed char`: typically -128 to 127.  
+     - `unsigned char`: 0 to 255.
+   - Notes: Even though `char` is primarily for characters, it’s also considered an integer type.
+
+`short`
+   - Size: At least 2 bytes (typically 16 bits).
+   - Range:  
+     - `signed short`: typically -32,768 to 32,767.  
+     - `unsigned short`: 0 to 65,535.
+
+`int`
+   - Size: At least 2 bytes (typically 4 bytes or 32 bits on most systems).
+   - Range:  
+     - `signed int`: typically -2,147,483,648 to 2,147,483,647.  
+     - `unsigned int`: 0 to 4,294,967,295.
+   - Notes: The default integer type.
+
+`long`
+   - Size: At least 4 bytes (typically 32 or 64 bits).
+   - Range:  
+     - `signed long`: typically -2,147,483,648 to 2,147,483,647 (32-bit) or -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807 (64-bit).  
+     - `unsigned long`: 0 to 4,294,967,295 (32-bit) or 0 to 18,446,744,073,709,551,615 (64-bit).
+
+`long long int`
+   - Size: At least 8 bytes (typically 64 bits).
+   - Range:  
+     - `signed long long`: typically -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.  
+     - `unsigned long long`: 0 to 18,446,744,073,709,551,615.

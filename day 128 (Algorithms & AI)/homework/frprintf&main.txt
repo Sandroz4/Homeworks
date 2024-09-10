@@ -1,0 +1,11 @@
+If the return type of the `main` function is compatible with `int`, returning from 
+the initial call to `main` is equivalent to invoking the `exit` function with the value 
+returned by `main` as the argument. When the terminating `}` of the `main` function is 
+reached, a return value of 0 is assumed. If the return type is not compatible with `int`, 
+the behavior is undefined.
+
+The `fprintf` function writes output to the specified stream, controlled by the format string. 
+The format string dictates how subsequent arguments are converted for output. If there are fewer 
+arguments than required by the format, the behavior is undefined. If there are extra arguments 
+after the format string is fully processed, they are evaluated but ignored. `fprintf` returns once 
+it reaches the end of the format string.
