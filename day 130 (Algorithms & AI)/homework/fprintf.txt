@@ -1,0 +1,3 @@
+The C library fprintf() function is used to write formatted data to a stream. 
+It is part of the standard I/O library <stdio.h> and allows you to write data 
+to a file stream as opposed to printf() which writes to the standard output stream.
