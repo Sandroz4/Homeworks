@@ -1,0 +1,14 @@
+დაადგინეთ სურათზე მოცემულ მეორე და მესამე ლოგიკური შედარებების 
+ადგილების შეცვლით შეიცვლება თუ არა შედეგი (longest_line), მოიყვანეთ მაგალითები.
+
+Original order:
+cCopyfor (i=0; i<lim-1 && (c=getchar()) !=EOF && c!='\n'; ++i)
+
+Swapped order:
+cCopyfor (i=0; (c=getchar()) !=EOF && i<lim-1 && c!='\n'; ++i)
+
+
+The order would make a difference because:
+
+In C, logical AND (&&) evaluates left-to-right and uses short-circuit evaluation.
+The getchar() operation has a side effect - it reads and advances the input.
