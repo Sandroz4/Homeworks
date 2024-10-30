@@ -1,0 +1,12 @@
+variable vs macros:
+
+difference between macro and variable is that when we declare variable space is given for variable,
+but when using variable with macros it doesn't use memory because when we create it, it has set value
+
+
+
+
+abt code itself:
+
+for (i=0; i<lim-1 && (c=getchar()) !=EOF && c!='\n'; ++i)
+The program reads characters until the line limit, EOF, or newline character is reached.
