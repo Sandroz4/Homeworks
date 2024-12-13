@@ -1,0 +1,5 @@
+In this example, a stack overflow occurs when the recursive sum function is used to
+ calculate the total of integers from 1 to a specified number. Each recursive call 
+ llocates stack memory, and when the input number is excessively large (e.g., 1,000,000),
+  the recursion depth grows beyond the stack's capacity. This eventually exhausts the
+   available stack memory, causing the program to crash.

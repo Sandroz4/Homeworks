@@ -1,0 +1,2 @@
+Reviewed mathematical functions and e
+xplored how to use Desmos for graph visualization.
