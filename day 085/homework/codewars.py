@@ -1,1 +1,1 @@
-#codewars day
+# codewars day
