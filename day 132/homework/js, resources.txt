@@ -1,0 +1,3 @@
+looked over this resource:
+
+https://javascript.info/arrow-functions-basics
